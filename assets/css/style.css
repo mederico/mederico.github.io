@@ -1,0 +1,291 @@
+/* DEBUT OBLIGATOIRE*/
+*,*:after,*:before {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+/* TOUT CE QUI CONCERNE LA BARRE NAV */
+.header{
+height:100%;
+width:100%;
+background:#ffff;
+}
+
+.header_nav_logo_titre{
+color:#ffff;
+font-size:50px;
+font-family: 'Akronim', cursive;
+}
+
+.header_nav_menu_link{
+margin-left:40px;
+color:white;
+text-decoration:none;	
+border-bottom: 1px solid #ffffff;
+padding:3px;
+}
+
+.header_navbar{
+width:100%;
+height:100%;
+display:flex;	
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
+font-size:20px;
+font-family: 'Nunito', sans-serif;
+}
+
+
+/* IMAGE ONE DES QU'ON ARRIVE SUR LE SITE */
+
+
+.header_fond{
+width:100%;
+height:80%;
+position:absolute;
+top:0;left:0;
+background:url(../images/image.jpg) center no-repeat;
+background-size:cover;
+z-index:1;
+opacity:0.90;
+}
+
+
+.header_boite{
+position:absolute;
+bottom:0;
+background:0 0;
+height:42px;
+width:100%;	
+z-index:10;
+}
+
+.container {
+width:90%;
+margin:auto;
+z-index:999;
+}
+
+.header_desc{
+font-family: 'Nunito', sans-serif;
+text-align:center;
+}
+
+.page_titre{
+color:#030708;
+font-size:40px;
+font-weight:900;
+margin-top:11rem;
+}
+
+
+
+/* BOUTON */
+
+.bouton {
+margin-top:5px;
+padding : 0.5rem 0.5rem;
+background: #212529;
+color:#F8F9FA;
+font-size:1.5rem;
+border:none;
+border-radius: 15px;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+.bouton:hover {
+background-color: #CED4DA;
+color: #212529;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.13);
+}
+
+/* Article */
+
+
+.main1{
+margin-top: 650px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+	
+.main1 .content .carte{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-bottom:20px;
+}
+
+.main1 .content .carte .left{
+flex: 0 0 30%;
+padding: 20px;
+background-color:#6C757D;
+color:#F8F9FA;
+text-align:center;	
+font-family: 'Nunito', sans-serif;
+}
+
+.main1 .content .carte .right img{
+height:300px;
+width: 400px;
+margin-top: 5px;
+}
+
+
+.left {
+	flex-wrap:wrap;
+}
+
+
+/* CARTE */
+
+.section3 .center{
+display:flex;
+justify-content:center;
+margin-bottom:60px;
+margin-top:30px;
+}
+
+.section3 .title h2{
+font-family: 'Nunito', sans-serif;
+color: #495057;
+font-size:30px;
+}
+
+
+.section3 .card {
+height:550px;
+width:450px;
+background-color:#495057;
+border-radius:10px;
+margin:20px;
+overflow:hidden;
+
+}
+
+.section3 .container2{
+display:flex;
+flex-flow: row wrap;
+max-width:1500px;
+margin:0 auto;
+justify-content:space-evenly;
+}
+
+.section3 .card .top img{
+height:250px;
+width: 450px;
+}
+
+.section3 .card .description{
+text-align:center;
+margin: 50px 10px 0 10px;
+font-family: 'Nunito', sans-serif;
+color: #E9ECEF;
+}
+
+.section3 .card .bottom h2{
+text-align:center;
+margin-top:10px;
+font-family: 'Nunito', sans-serif;
+color: #E9ECEF;
+}
+
+.section3 .card .suite{
+text-align:center;
+margin-top:30px;
+
+}
+
+.section3 .card .suite a{
+text-decoration:none;
+color:#CED4DA;
+
+}
+/* FOOTER */
+
+.footer{
+height:200px;
+margin-top:100px;
+background-color:#343A40;
+color:#F8F9FA;
+display:flex;
+justify-content:space-around;
+}
+
+.taillefooter{
+height:150px;	
+text-align:center;
+margin-top:30px;
+padding:10px;
+font-family: 'Nunito', sans-serif;
+}
+
+.footer-menu {
+background-color: #4bc1c7;
+margin-top: 2rem;
+}
+.menu-footer {
+list-style: none inside none;
+padding: .5rem 0;
+text-align: center;
+width: 100%;
+font-size: .9rem;
+}
+.menu-footer-item {
+padding: 0 .5rem;
+}
+.menu-footer-link {
+text-transform: uppercase;
+color: #fefefe;
+display: block;
+padding: .25rem;
+}
+.footer .menu-footer-link:hover {
+color: #1b1b1b;
+}
+
+/* RESPONSIVE */
+
+
+
+@media screen and (max-width: 30rem) {
+
+.header_nav_menu_link{
+margin-left:20px;
+}
+
+.main1 .carte{
+margin:10px;
+padding:10px;
+}
+
+.main1 .content .carte .right img{
+height:300px;
+width:100%;
+margin-top:0px;
+}
+
+.main1 .content .carte{
+display:block
+}
+
+.taillefooter{
+margin-top:10px;
+}
+
+.page_titre{
+margin-top:140px;
+}
+}
+
+
+@media screen and (max-width: 50rem) { 
+
+}
